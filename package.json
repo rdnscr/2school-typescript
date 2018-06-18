@@ -1,0 +1,20 @@
+{
+  "name": "typescript-engineering",
+  "version": "1.0.0",
+  "description": "Install the \"tslint\" and \"typescript\"\r ```\r npm install tslint typescript -g\r ```",
+  "dependencies": {
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "tslint --project ./Exercise && tsc -p ./Exercise",
+    "build:solution": "tslint --project ./Solution && tsc -p ./Solution"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://2bit.visualstudio.com/DefaultCollection/Playground/_git/typescript"
+  },
+  "author": "",
+  "license": "ISC"
+}

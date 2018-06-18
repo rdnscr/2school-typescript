@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "amd",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "experimentalDecorators": true,
+        "allowJs": false,
+        "lib": [
+            "es2017",
+            "dom"
+        ]
+    },
+    "include": [
+        "**/*"
+    ]
+}
