@@ -10,7 +10,7 @@ function log(target: any, key: string, descriptor: PropertyDescriptor) {
     // key === "foo"
     // value === Object.getOwnPropertyDescriptor(C.prototype, "foo")
     return {
-        value: (...args: string[]): any => {
+        value: (...args: any[]): any => {
 
             // assign the original function
             const originalFunction = descriptor.value;
