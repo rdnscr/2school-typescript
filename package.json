@@ -4,7 +4,7 @@
   "description": "Install the \"tslint\" and \"typescript\"\r ```\r npm install tslint typescript -g\r ```",
   "dependencies": {
     "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
+    "typescript": "^3.5.1"
   },
   "devDependencies": {},
   "scripts": {
