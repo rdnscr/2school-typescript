@@ -1,6 +1,4 @@
-interface IClassToDecorate {
-    new (greeting: string): ClassToDecorate;
-}
+type IClassToDecorate = new (greeting: string) => ClassToDecorate;
 
 // TODO add decorator
 class ClassToDecorate {
@@ -40,6 +38,6 @@ function hiDecorator(constructorToDecorate: IClassToDecorate): IClassToDecorate 
    return replacedConstructor;
 }
 
-let decoratedClass: ClassToDecorate = new ClassToDecorate("I will be replaced");
+let decoratedClass: ClassToDecorate = new ClassToDecorate('I will be replaced');
 // tslint:disable-next-line:no-console
 console.log(decoratedClass.greet());

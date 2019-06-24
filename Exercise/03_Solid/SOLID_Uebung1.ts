@@ -9,7 +9,7 @@ class Person {
         if (this.validateEmail(email)) {
             this.email = email;
         } else {
-            throw new Error("Invalid email!");
+            throw new Error('Invalid email!');
         }
     }
 

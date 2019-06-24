@@ -20,10 +20,10 @@ function log(target: any, key: string, descriptor: PropertyDescriptor) {
             .join();
 
             // TODO invoke foo() and get its return value
-            const r = "";
+            const r = '';
 
             // TODO convert result to string
-            const result = "";
+            const result = '';
 
             // display in console the function call details
             // tslint:disable-next-line:no-console
