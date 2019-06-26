@@ -8,7 +8,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "lint": "tslint --project ./Solution --fix",
     "build": "tslint --project ./Exercise && tsc -p ./Exercise",
     "build:solution": "tslint --project ./Solution && tsc -p ./Solution"
   },
