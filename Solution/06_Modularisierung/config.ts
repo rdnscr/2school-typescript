@@ -4,6 +4,6 @@ export interface IAppConfig {
 }
 
 export const theAppConfig: IAppConfig = {
-    color: "red",
-    routes: ["home", "list"],
+    color: 'red',
+    routes: ['home', 'list'],
 };

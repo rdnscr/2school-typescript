@@ -6,8 +6,8 @@ interface IAppConfig {
 }
 
 let config: IAppConfig = {
-        color: "red",
-        routes: ["home", "list"],
+        color: 'red',
+        routes: ['home', 'list'],
     };
 
 function configure(configuration: IAppConfig): boolean {
@@ -23,7 +23,7 @@ function configure(configuration: IAppConfig): boolean {
 const ret: boolean = configure(config);
 
 if (ret) {
-    console.log("successfull configured.");
+    console.log('successfull configured.');
 }
 
 // -----------------
@@ -51,6 +51,6 @@ const configurator: Configurator = new Configurator(config);
 const ret2: boolean = configurator.configure();
 
 if (ret2) {
-    console.log("successfull configured.");
+    console.log('successfull configured.');
 }
 // tslint:enable no-console

@@ -1,9 +1,9 @@
-import {Binder} from "./binder";
-import {theAppConfig} from "./config";
-import {Router} from "./router";
+import {Binder} from './binder';
+import {theAppConfig} from './config';
+import {Router} from './router';
 
-import {DataService} from "./dataService";
-import {RemoteService} from "./remoteService";
+import {DataService} from './dataService';
+import {RemoteService} from './remoteService';
 
 function boot(): void {
     const router: Router = new Router(theAppConfig);

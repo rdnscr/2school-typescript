@@ -1,5 +1,5 @@
-import { inject } from "./inject";
-import { Injector } from "./injector";
+import { inject } from './inject';
+import { Injector } from './injector';
 
 // tslint:disable max-classes-per-file
 
@@ -16,17 +16,17 @@ class Tire {
 
 class Car {
     // This example shows property injection instead of constructor injection
-    @inject("Engine")
+    @inject('Engine')
     public engine: Engine;
-    @inject("Tire")
+    @inject('Tire')
     public tire: Tire;
 
 }
 
 const container: Injector = new Injector();
-container.mapValue("Engine", new Engine("400 PS"));
+container.mapValue('Engine', new Engine('400 PS'));
 // tslint:disable-next-line:no-magic-numbers
-container.mapValue("Tire", new Tire(4));
+container.mapValue('Tire', new Tire(4));
 
 const car: Car = container.instantiate(Car);
 

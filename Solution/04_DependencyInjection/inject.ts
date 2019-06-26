@@ -1,3 +1,4 @@
+// tslint:disable-next-line:interface-name
 export interface Injectable {
     __inject__?: { [name: string]: string };
 }
@@ -26,7 +27,7 @@ export function inject(injectionKey: string): any {
         // decorated.
         const targetType: Injectable = target.constructor as Injectable;
 
-        if (!targetType.hasOwnProperty("__inject__")) {
+        if (!targetType.hasOwnProperty('__inject__')) {
             targetType.__inject__ = {};
         }
 

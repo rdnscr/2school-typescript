@@ -1,4 +1,4 @@
-import { Injectable } from "./inject";
+import { Injectable } from './inject';
 
 export class Injector {
 
@@ -28,7 +28,7 @@ export class Injector {
      * param {function} Class
      * returns {T}
      */
-    public instantiate<T>(Class: { new(...args: any[]): T }): T {
+    public instantiate<T>(Class: new(...args: any[]) => T): T {
         // Start by creating a new instance of the target Class.
         const instance: any = new Class();
 
@@ -51,7 +51,7 @@ export class Injector {
 
         // Retrieve the `__inject__` hash created by the @inject decorator from the
         // target Class.
-        if (Class.hasOwnProperty("__inject__")) {
+        if (Class.hasOwnProperty('__inject__')) {
             result = Object.keys(Class.__inject__)
                 .map((propertyName: string) => {
                     return {
@@ -65,6 +65,7 @@ export class Injector {
     }
 }
 
+// tslint:disable-next-line:interface-name
 interface InjectionPoint {
     propertyName: string;
     injectionKey: string;

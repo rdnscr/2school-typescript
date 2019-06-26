@@ -1,8 +1,6 @@
 // tslint:disable no-console
 
-interface IClassToDecorate {
-    new (greeting: string): ClassToDecorate;
-}
+type IClassToDecorate = new (greeting: string) => ClassToDecorate;
 
 @hiDecorator
 class ClassToDecorate {
@@ -12,7 +10,7 @@ class ClassToDecorate {
     }
 
     public greet() {
-        return "Hello, " + this.greeting;
+        return 'Hello, ' + this.greeting;
     }
 }
 
@@ -31,7 +29,7 @@ function hiDecorator(constructorToDecorate: IClassToDecorate): IClassToDecorate 
 
     // the new constructor behaviour
     const replacedConstructor: any = (...args) => {
-        return construct(original, ["hi"]);
+        return construct(original, ['hi']);
     };
 
     // copy prototype so intanceof operator still works
@@ -41,7 +39,7 @@ function hiDecorator(constructorToDecorate: IClassToDecorate): IClassToDecorate 
     return replacedConstructor;
 }
 
-let decoratedAny = new ClassToDecorate("I will be replaced");
+let decoratedAny = new ClassToDecorate('I will be replaced');
 console.log(decoratedAny.greet());
 
 // tslint:enable no-console

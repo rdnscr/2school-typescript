@@ -1,4 +1,4 @@
-import {RemoteService} from "./remoteService";
+import {RemoteService} from './remoteService';
 
 export class DataService {
     private localData: any;

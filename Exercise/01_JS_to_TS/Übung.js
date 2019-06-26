@@ -4,8 +4,8 @@ function configure(configuration) {
     console.log('farbe: ' + configuration.color);
     
     var i;
-    for (i = 0; index < configuration.routes.length; ++i) {
-        console.log('route: ' + configuration.routes[i]);
+    for (i = 0; index < configuration.routs.length; ++i) {
+        console.log('route: ' + configuartion.routes[i]);
     }
     return true;
 }

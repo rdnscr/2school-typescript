@@ -1,4 +1,4 @@
-import {IAppConfig} from "./config";
+import {IAppConfig} from './config';
 
 export class Router {
     constructor(private readonly config: IAppConfig) {

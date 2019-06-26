@@ -1,15 +1,15 @@
 // tslint:disable no-console
 
 const readFromBackendOne: Promise<string> = new Promise((resolve) => {
-   resolve("one");
+   resolve('one');
 });
 
 let readFromBackendAfterOne: Promise<string> = new Promise((resolve) => {
-   resolve("afterOne");
+   resolve('afterOne');
 });
 
 let readFromBackendAfterAfterOne: Promise<string> = new Promise((resolve) => {
-   resolve("afterAfterOne");
+   resolve('afterAfterOne');
 });
 
 readFromBackendOne.then((result: any) => {
