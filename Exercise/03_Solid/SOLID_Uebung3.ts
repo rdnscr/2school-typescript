@@ -1,10 +1,16 @@
 // tslint:disable max-classes-per-file
 
-interface IPersistanceService {
-    save(entity: any): number;
+class DbPersitanceService {
+    public store(entity: any): number {
+        // tslint:disable-next-line:no-magic-numbers
+        const id: number = Math.floor((Math.random() * 100) + 1);
+
+        // DB persistance logic...
+        return id;
+    }
 }
 
-class CookiePersitanceService implements IPersistanceService {
+class CookiePersitanceService {
     public save(entity: any): number {
         // tslint:disable-next-line:no-magic-numbers
         const id: number = Math.floor((Math.random() * 100) + 1);
@@ -15,8 +21,8 @@ class CookiePersitanceService implements IPersistanceService {
 }
 
 class FavouritesController {
-    private persistanceService: IPersistanceService;
-    constructor(persistanceService: IPersistanceService) {
+    private persistanceService: CookiePersitanceService;
+    constructor(persistanceService: CookiePersitanceService) {
         this.persistanceService = persistanceService;
     }
     public saveAsFavourite(articleId: number): number {
