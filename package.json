@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Install the \"tslint\" and \"typescript\"\r ```\r npm install tslint typescript -g\r ```",
   "dependencies": {
-    "tslint": "^5.10.0",
-    "typescript": "^3.5.1"
+    "tslint": "^6.1.2",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,6 +15,6 @@
     "type": "git",
     "url": "https://2bit.visualstudio.com/DefaultCollection/Playground/_git/typescript"
   },
-  "author": "",
+  "author": "2BIT GmbH",
   "license": "ISC"
 }
