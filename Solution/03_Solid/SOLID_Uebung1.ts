@@ -12,7 +12,7 @@ class Email {
     }
 
     public validateEmail(email: string): boolean {
-        const re: RegExp = /\S+@\S+\.\S+/;
+        const re = /\S+@\S+\.\S+/;
 
         return re.test(email);
     }

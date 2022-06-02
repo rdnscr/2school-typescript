@@ -35,7 +35,7 @@ function log(target: any, key: string, descriptor: any) {
     };
 }
 
-let decorated = new MethodDecoratorClass();
+const decorated = new MethodDecoratorClass();
 decorated.foo(12);
 
 // tslint:enable no-console

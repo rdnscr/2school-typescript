@@ -4,11 +4,11 @@ const readFromBackendOne: Promise<string> = new Promise((resolve) => {
    resolve('one');
 });
 
-let readFromBackendAfterOne: Promise<string> = new Promise((resolve) => {
+const readFromBackendAfterOne: Promise<string> = new Promise((resolve) => {
    resolve('afterOne');
 });
 
-let readFromBackendAfterAfterOne: Promise<string> = new Promise((resolve) => {
+const readFromBackendAfterAfterOne: Promise<string> = new Promise((resolve) => {
    resolve('afterAfterOne');
 });
 

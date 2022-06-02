@@ -39,7 +39,7 @@ function hiDecorator(constructorToDecorate: IClassToDecorate): IClassToDecorate 
     return replacedConstructor;
 }
 
-let decoratedAny = new ClassToDecorate('I will be replaced');
+const decoratedAny = new ClassToDecorate('I will be replaced');
 console.log(decoratedAny.greet());
 
 // tslint:enable no-console

@@ -5,7 +5,7 @@ interface IAppConfig {
     routes: string[];
 }
 
-let config: IAppConfig = {
+const config: IAppConfig = {
         color: 'red',
         routes: ['home', 'list'],
     };

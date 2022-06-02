@@ -1,9 +1,0 @@
-{
-    "lintOptions": {
-      "typeCheck": true
-    },
-    "extends": "tslint:recommended",
-    "rules": {
-      "quotemark": [true, "single"]
-    }    
-  }

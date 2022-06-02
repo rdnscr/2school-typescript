@@ -1,15 +1,18 @@
 {
   "name": "typescript-engineering",
   "version": "1.0.0",
-  "description": "Install the \"tslint\" and \"typescript\"\r ```\r npm install tslint typescript -g\r ```",
+  "description": "Simple TypeScript project",
   "dependencies": {
-    "tslint": "^6.1.2",
-    "typescript": "^4.3.0"
+    "typescript": "^4.7.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0"
+  },
   "scripts": {
-    "build": "tslint --project ./Exercise && tsc -p ./Exercise",
-    "build:solution": "tslint --project ./Solution && tsc -p ./Solution"
+    "build": "eslint ./Exercise --ext .ts && tsc -p ./Exercise",
+    "build:solution": "eslint ./Solution --ext .ts && tsc -p ./Solution"
   },
   "repository": {
     "type": "git",
