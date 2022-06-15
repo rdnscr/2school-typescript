@@ -65,7 +65,6 @@ export class Injector {
     }
 }
 
-// tslint:disable-next-line:interface-name
 interface InjectionPoint {
     propertyName: string;
     injectionKey: string;

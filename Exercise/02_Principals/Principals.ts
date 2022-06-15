@@ -15,7 +15,6 @@ class Button implements IButton {
    set src(value: string) { this.source = value; }
 }
 
-// tslint:disable-next-line:max-classes-per-file
 class PrincipalsExample {
    public btn1: IButton = new Button();
    public btn2: IButton = new Button();
@@ -51,9 +50,6 @@ class PrincipalsExample {
 }
 
 let example = new PrincipalsExample();
-// tslint:disable-next-line:no-console
 console.log(example.btn1.src + ', ' + example.btn1.name + ', ' + example.btn1.onload);
-// tslint:disable-next-line:no-console
 console.log(example.btn2.src + ', ' + example.btn2.name + ', ' + example.btn2.onload);
-// tslint:disable-next-line:no-console
 console.log(example.btn3.src + ', ' + example.btn3.name + ', ' + example.btn3.onload);

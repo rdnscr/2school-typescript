@@ -39,5 +39,4 @@ function hiDecorator(constructorToDecorate: IClassToDecorate): IClassToDecorate 
 }
 
 let decoratedClass: ClassToDecorate = new ClassToDecorate('I will be replaced');
-// tslint:disable-next-line:no-console
 console.log(decoratedClass.greet());

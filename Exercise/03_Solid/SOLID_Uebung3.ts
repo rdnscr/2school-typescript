@@ -1,8 +1,5 @@
-// tslint:disable max-classes-per-file
-
 class DbPersitanceService {
-    public store(entity: any): number {
-        // tslint:disable-next-line:no-magic-numbers
+    public store(entity: any): number {        
         const id: number = Math.floor((Math.random() * 100) + 1);
 
         // DB persistance logic...
@@ -12,7 +9,6 @@ class DbPersitanceService {
 
 class CookiePersitanceService {
     public save(entity: any): number {
-        // tslint:disable-next-line:no-magic-numbers
         const id: number = Math.floor((Math.random() * 100) + 1);
 
         // Cookie persistance logic...
@@ -31,5 +27,3 @@ class FavouritesController {
 }
 
 const favController: FavouritesController = new FavouritesController(new CookiePersitanceService());
-
-// tslint:enable max-classes-per-file

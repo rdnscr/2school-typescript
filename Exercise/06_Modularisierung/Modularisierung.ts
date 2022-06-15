@@ -1,4 +1,3 @@
-// tslint:disable-next-line:interface-name
 interface AppConfig {
   color: string;
   routes: string[];
@@ -17,7 +16,6 @@ function boot(): void {
 
 function bind(data: any): void {
   // would bind the view to the controller
-  // tslint:disable-next-line:no-console
   console.log(data);
 }
 
@@ -40,7 +38,6 @@ class Router {
 
   public setupRoutes(): void {
     this.currentConfig.routes.forEach((element) => {
-      // tslint:disable-next-line:no-console
       console.log(element);
     });
   }

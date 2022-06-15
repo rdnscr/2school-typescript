@@ -25,8 +25,7 @@ function log(target: any, key: string, descriptor: PropertyDescriptor) {
             // TODO convert result to string
             const result = '';
 
-            // display in console the function call details
-            // tslint:disable-next-line:no-console
+            // display in console the function call details            
             console.log(`Call: ${key}(${a}) => ${r}`);
 
             // return the result of invoking foo

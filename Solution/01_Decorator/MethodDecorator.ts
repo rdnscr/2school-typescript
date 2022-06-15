@@ -1,5 +1,3 @@
-// tslint:disable no-console
-
 class MethodDecoratorClass {
     @log
     public foo(n: number) {
@@ -37,5 +35,3 @@ function log(target: any, key: string, descriptor: any) {
 
 const decorated = new MethodDecoratorClass();
 decorated.foo(12);
-
-// tslint:enable no-console

@@ -1,4 +1,3 @@
-// tslint:disable-next-line:interface-name
 export interface Injectable {
     __inject__?: { [name: string]: string };
 }

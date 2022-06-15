@@ -1,5 +1,3 @@
-// tslint:disable max-classes-per-file
-
 class Email {
     public email: string;
 
@@ -33,5 +31,3 @@ class Person {
         alert('Hi!');
     }
 }
-
-// tslint:enable max-classes-per-file

@@ -1,5 +1,3 @@
-// tslint:disable no-console
-
 interface IAppConfig {
     color: string;
     routes: string[];
@@ -53,4 +51,3 @@ const ret2: boolean = configurator.configure();
 if (ret2) {
     console.log('successfull configured.');
 }
-// tslint:enable no-console

@@ -5,8 +5,7 @@ export class Router {
     }
 
     public setupRoutes(): void {
-        this.config.routes.forEach((element: string) => {
-            // tslint:disable-next-line:no-console
+        this.config.routes.forEach((element: string) => {            
             console.log(element);
         });
     }

@@ -1,5 +1,3 @@
-// tslint:disable
-
 function configure(configuration) {
     console.log('farbe: ' + configuration.color);
     
@@ -22,5 +20,3 @@ var ret = configure(config);
 if(ret) {
     console.log('successfull configured.');
 }
-
-// tslint:enable

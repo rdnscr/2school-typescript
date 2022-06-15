@@ -1,5 +1,3 @@
-// tslint:disable no-console
-
 type IClassToDecorate = new (greeting: string) => ClassToDecorate;
 
 @hiDecorator
@@ -41,5 +39,3 @@ function hiDecorator(constructorToDecorate: IClassToDecorate): IClassToDecorate 
 
 const decoratedAny = new ClassToDecorate('I will be replaced');
 console.log(decoratedAny.greet());
-
-// tslint:enable no-console

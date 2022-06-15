@@ -1,5 +1,3 @@
-// tslint:disable no-console
-
 const readFromBackendOne: Promise<string> = new Promise((resolve) => {
    resolve('one');
 });
@@ -29,5 +27,3 @@ async function asyncExample(): Promise<void> {
 }
 
 asyncExample();
-
-// tslint:enable no-console

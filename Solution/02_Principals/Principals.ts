@@ -15,7 +15,6 @@ class Button implements IButton {
    set src(value: string) { this.source = value; }
 }
 
-// tslint:disable-next-line:max-classes-per-file
 class PrincipalsExample {
    public buttons: IButton[] = [new Button(), new Button(), new Button()];
 
@@ -39,7 +38,6 @@ class PrincipalsExample {
 
 const example: PrincipalsExample = new PrincipalsExample();
 
-for (const btn of example.buttons) {
-   // tslint:disable-next-line:no-console
+for (const btn of example.buttons) {   
    console.log(`${btn.src}, ${btn.name}, ${btn.onload}`);
 }
