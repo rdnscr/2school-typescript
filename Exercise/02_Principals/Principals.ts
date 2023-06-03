@@ -49,7 +49,7 @@ class PrincipalsExample {
    }
 }
 
-let example = new PrincipalsExample();
+const example = new PrincipalsExample();
 console.log(example.btn1.src + ', ' + example.btn1.name + ', ' + example.btn1.onload);
 console.log(example.btn2.src + ', ' + example.btn2.name + ', ' + example.btn2.onload);
 console.log(example.btn3.src + ', ' + example.btn3.name + ', ' + example.btn3.onload);

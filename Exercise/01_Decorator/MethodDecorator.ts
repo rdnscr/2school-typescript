@@ -34,5 +34,5 @@ function log(target: any, key: string, descriptor: PropertyDescriptor) {
     };
 }
 
-let decorated = new MethodDecoratorClass();
+const decorated = new MethodDecoratorClass();
 decorated.foo(12);

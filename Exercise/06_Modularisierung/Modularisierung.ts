@@ -3,7 +3,7 @@ interface AppConfig {
   routes: string[];
 }
 
-let config: AppConfig = {
+const config: AppConfig = {
   color: 'red',
   routes: ['home', 'list'],
 };

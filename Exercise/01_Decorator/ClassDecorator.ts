@@ -38,5 +38,5 @@ function hiDecorator(constructorToDecorate: IClassToDecorate): IClassToDecorate 
    return replacedConstructor;
 }
 
-let decoratedClass: ClassToDecorate = new ClassToDecorate('I will be replaced');
+const decoratedClass: ClassToDecorate = new ClassToDecorate('I will be replaced');
 console.log(decoratedClass.greet());
