@@ -3,6 +3,7 @@
         "noImplicitAny": false,
         "sourceMap": true,
         "target": "es5",
+        "module": "AMD",
         "declaration": false,
         "removeComments": true,
         "noLib": false,
