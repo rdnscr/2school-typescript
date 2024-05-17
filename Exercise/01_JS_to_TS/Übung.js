@@ -1,3 +1,4 @@
+
 function configure(configuration) {
     console.log('farbe: ' + configuration.color);
     

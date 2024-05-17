@@ -6,18 +6,19 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.27.0",
-    "@typescript-eslint/parser": "^5.27.0",
-    "eslint": "^8.16.0"
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "eslint": "^8.56.0"
   },
   "scripts": {
     "build": "eslint ./Exercise --ext .ts && tsc -p ./Exercise",
+    "build-js": "eslint ./Exercise --ext .js",
     "build:solution": "eslint ./Solution --ext .ts && tsc -p ./Solution"
   },
   "repository": {
     "type": "git",
     "url": "https://2bit.visualstudio.com/DefaultCollection/Playground/_git/typescript"
   },
-  "author": "2BIT GmbH",
+  "author": "2BIT AG",
   "license": "ISC"
 }

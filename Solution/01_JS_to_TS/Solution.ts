@@ -8,7 +8,7 @@ const config: IAppConfig = {
         routes: ['home', 'list'],
     };
 
-function configure(configuration: IAppConfig): boolean {
+const configure = (configuration: IAppConfig): boolean => {
     console.log(`farbe: ${configuration.color}`);
 
     for (const route of configuration.routes) {
